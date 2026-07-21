@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Zachary Rodriguez, PhD — Resume</title>
+<style>
+  @page { size: Letter; margin: 0.4in 0.6in; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: #1a1a1a; background: #fff;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.6pt; line-height: 1.28;
+  }
+  header { margin-bottom: 6px; }
+  h1 { margin: 0 0 2px; font-size: 18.5pt; font-weight: 700; letter-spacing: -.3px; }
+  .contact { font-size: 8.4pt; color: #444; }
+  .contact a { color: #444; text-decoration: none; }
+  .summary { margin: 7px 0 10px; font-size: 9.4pt; color: #222; }
+  h2 {
+    margin: 9px 0 4px; font-size: 9.4pt; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .8px; border-bottom: 1.2px solid #1a1a1a; padding-bottom: 2px;
+  }
+  .entry { margin-bottom: 6px; }
+  .entry__head { display: flex; justify-content: space-between; align-items: baseline; }
+  .entry__title { font-weight: 700; font-size: 9.6pt; }
+  .entry__dates { font-size: 8.4pt; color: #444; white-space: nowrap; }
+  .entry__org { font-size: 8.7pt; color: #333; font-style: italic; margin-bottom: 2px; }
+  ul { margin: 2px 0 0; padding-left: 14px; }
+  li { margin-bottom: 1px; }
+  .pubs { margin: 0; padding-left: 14px; }
+  .pubs li { margin-bottom: 2px; font-size: 8.8pt; }
+  .skills { font-size: 8.8pt; }
+  .skills strong { font-weight: 700; }
+  .two-col { display: flex; gap: 22px; }
+  .two-col > div { flex: 1; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Zachary Rodriguez, PhD</h1>
+  <div class="contact">
+    Philadelphia, PA &nbsp;·&nbsp;
+    <a href="https://linkedin.com/in/zbrodriguez/">linkedin.com/in/zbrodriguez</a> &nbsp;·&nbsp;
+    <a href="https://github.com/frogriguez">github.com/frogriguez</a> &nbsp;·&nbsp;
+    <a href="https://scholar.google.com/citations?user=R0HlvQIAAAAJ">Google Scholar</a> &nbsp;·&nbsp;
+    <a href="https://orcid.org/0000-0002-4591-803X">ORCID 0000-0002-4591-803X</a>
+  </div>
+</header>
+
+<p class="summary">
+  Genomics and clinical informatics leader with a PhD in evolutionary biology and postdoctoral training in
+  computational psychiatry. Technical Director of the Penn Medicine Biobank, leading Nextflow pipeline development
+  and genomic data operations for a 300K+ participant biobank. Experienced across GWAS/ExWAS/PheWAS methodology,
+  HPC &amp; cloud infrastructure (AWS, Azure, GCP), and cross-institutional research collaboration.
+</p>
+
+<h2>Experience</h2>
+
+<div class="entry">
+  <div class="entry__head">
+    <span class="entry__title">Technical Director</span>
+    <span class="entry__dates">2023 – Present</span>
+  </div>
+  <div class="entry__org">Penn Medicine Biobank (PMBB), Perelman School of Medicine, University of Pennsylvania</div>
+  <ul>
+    <li>Lead development of scalable Nextflow pipelines (GWAS, ExWAS, PheWAS) for 500K+ sample biobank datasets across local HPC and cloud (AWS, Azure, GCP)</li>
+    <li>Curate and release the annual PMBB dataset (300K+ participants: genomics, EHR, imaging); project manager for 5+ genomic research teams</li>
+    <li>Direct data governance for genomic/EHR data requests, cohort queries, and variant-level extractions across Penn Medicine</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry__head">
+    <span class="entry__title">Postdoctoral Researcher, Computational Mental Health</span>
+    <span class="entry__dates">2020 – 2023</span>
+  </div>
+  <div class="entry__org">Center for Computation &amp; Technology, Louisiana State University</div>
+  <ul>
+    <li>Developed ML and NLP pipelines predicting mental health symptoms from archival clinical data; supervised the technical side of 5 research projects</li>
+    <li>Ensured HIPAA- and IRB-compliant data integration and management across multi-site collaborations</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="entry__head">
+    <span class="entry__title">NSF Graduate Research Fellow</span>
+    <span class="entry__dates">2014 – 2020</span>
+  </div>
+  <div class="entry__org">Museum of Natural Science, Louisiana State University</div>
+  <ul>
+    <li>Led 3 independent genomics research projects on reptile evolutionary biology from design to publication; secured $180,000+ in external funding</li>
+    <li>Published in <em>Science Advances</em>; work covered by NPR, AP, and Science News</li>
+  </ul>
+</div>
+
+<div class="two-col">
+  <div>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry__head"><span class="entry__title">PhD, Ecology, Evolution, &amp; Genetics</span><span class="entry__dates">2020</span></div>
+      <div class="entry__org">Louisiana State University</div>
+    </div>
+    <div class="entry">
+      <div class="entry__head"><span class="entry__title">BS, Biological Sciences</span><span class="entry__dates">2013</span></div>
+      <div class="entry__org">Clarkson University</div>
+    </div>
+
+    <h2>Skills</h2>
+    <p class="skills">
+      <strong>Pipelines:</strong> Nextflow, Snakemake, Docker, Singularity, SLURM/PBS<br>
+      <strong>Genomics:</strong> GWAS, ExWAS, PheWAS, GSEA, TWAS, PLINK, SAIGE, VEP<br>
+      <strong>Languages:</strong> Python, R, SQL, Bash<br>
+      <strong>Cloud:</strong> AWS, Azure, GCP, Databricks<br>
+      <strong>Clinical:</strong> EHR/HIPAA, IRB compliance, OMOP<br>
+      <strong>ML/Stats:</strong> NLP, LLMs, Bayesian &amp; mixed models
+    </p>
+  </div>
+  <div>
+    <h2>Selected Publications</h2>
+    <ul class="pubs">
+      <li>Palmer, Hill, Hodgson, et al., <strong><u>Rodriguez, Z.B.</u></strong>, et al., for BRaVa (2026). <a href="https://www.medrxiv.org/content/10.64898/2026.05.21.26353759v1">The Biobank Rare Variant consortium powers the discovery of rare genetic associations through global collaboration</a>. <em>medRxiv.</em></li>
+      <li><strong><u>Rodriguez, Z.B.</u></strong>, Guare, L., Cardone, K.M., Carson, C.C., Caruth, L., &amp; Verma, A. PMBB Geno-Pheno Toolkit: A suite of scalable, reproducible pipelines for cross-biobank association analyses. <em>Bioinformatics</em> (under review).</li>
+      <li>Verma, A., <strong><u>Rodriguez, Z.B.</u></strong>, Guare, L., Cardone, K., &amp; Carson, C. (2024). <a href="http://psb.stanford.edu/psb-online/proceedings/psb25/wkshop_commandline.pdf">Command line to pipeLine: Cross-biobank analyses with Nextflow</a>. <em>PSB 2025 Proceedings</em>, 696–701.</li>
+      <li><strong><u>Rodriguez, Z.B.</u></strong>, Perkins, S.L., &amp; Austin, C.C. (2018). <a href="https://www.science.org/doi/10.1126/sciadv.aao5017">Multiple origins of green blood in New Guinea lizards</a>. <em>Science Advances</em>, 4(5), eaao5017.</li>
+      <li>Cohen, A.S., <strong><u>Rodriguez, Z.B.</u></strong>, et al. (2022). <a href="https://doi.org/10.1093/schbul/sbac051">Natural language processing and psychosis: On the need for comprehensive psychometric evaluation</a>. <em>Schizophrenia Bulletin</em>, 48(5), 939–948.</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

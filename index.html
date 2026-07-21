@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zachary Rodriguez, PhD — Genomics &amp; Clinical Informatics</title>
+<meta name="description" content="Zachary Rodriguez, PhD — Technical Director, Penn Medicine Biobank. Genomics, clinical informatics, and machine learning.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__brand">Zachary Rodriguez</div>
+  <button class="nav__toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav__links" id="navLinks">
+    <a class="nav__link" href="#about">About</a>
+    <a class="nav__link" href="#projects">Projects</a>
+    <a class="nav__link" href="#skills">Skills</a>
+    <a class="nav__link" href="#experience">Experience</a>
+    <a class="nav__link" href="#education">Education</a>
+    <a class="nav__link" href="#interests">Interests</a>
+  </div>
+</nav>
+
+<main class="main">
+
+  <div class="header">
+    <h1>Zachary Rodriguez, <span class="credential">PhD</span></h1>
+    <p class="header__sub">Technical Director · Genomics &amp; Clinical Informatics · Penn Medicine Biobank</p>
+  </div>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section section--first about" id="about" data-accent="about">
+    <div class="section__head">
+      <span class="section__num">01</span>
+      <h2 class="section__title">About Me</h2>
+      <span class="section__rule"></span>
+    </div>
+
+    <div class="box box--intro box--accent">
+      <div class="about__grid">
+        <img class="about__photo" src="assets/img/zbr-headshot2.jpg" alt="Portrait of Zachary Rodriguez">
+        <div class="about__body">
+          <p class="about__lead">Hi, I'm Zach — a biologist, computing enthusiast, and geneticist.</p>
+          <p>
+            I'm currently a <strong>Senior Bioinformatician</strong> at the Penn Medicine Biobank (PMBB), where I lead
+            genomic pipeline development and data operations across the Setia-Verma, Verma, and Drivas labs at the
+            Perelman School of Medicine, University of Pennsylvania. I completed my PhD at the
+            <a href="https://www.lsu.edu/mns/index.php" target="_blank" rel="noopener">Museum of Natural Science</a>,
+            Louisiana State University, investigating the genomic underpinnings of
+            <a href="https://www.science.org/doi/10.1126/sciadv.aao5017" target="_blank" rel="noopener">green-blooded lizards</a>
+            using phylogenomics and transcriptomics, followed by a postdoc in computational psychopathology analyzing
+            digital phenotypes of serious mental illness.
+          </p>
+          <p>
+            I'm interested in integrating genomic, clinical EHR, and diverse demographic datasets to study the causes
+            and treatments of human disease.
+          </p>
+
+          <div class="about__links">
+            <a class="chip" href="https://github.com/frogriguez" target="_blank" rel="noopener">GitHub</a>
+            <a class="chip" href="https://scholar.google.com/citations?user=R0HlvQIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="chip" href="https://linkedin.com/in/zbrodriguez/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="chip" href="https://orcid.org/0000-0002-4591-803X" target="_blank" rel="noopener">ORCID</a>
+            <a class="chip" href="assets/resume/resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section projects" id="projects" data-accent="projects">
+    <div class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Projects</h2>
+      <span class="section__rule"></span>
+    </div>
+
+    <div class="grid-projects">
+
+      <article class="card">
+        <span class="card__tag">Clinical Informatics</span>
+        <h3 class="card__title">PMBB Geno-Pheno Toolkit</h3>
+        <p class="card__blurb">
+          Lead developer of a modular Nextflow suite for cross-biobank association analyses — GWAS, ExWAS, PheWAS,
+          meta-analysis, and LD-based variant prioritization — benchmarked on PMBB (56K+ samples, 164M+ variants)
+          and All of Us across local HPC, AWS, Azure, and GCP.
+        </p>
+        <p class="card__cite">
+          <a href="https://github.com/PMBB-Informatics-and-Genomics/pmbb-geno-pheno-toolkit" target="_blank" rel="noopener">PMBB Geno Pheno Toolkit →</a>
+        </p>
+        <p class="card__cite">
+          <u>Rodriguez</u>, Guare, Cardone, Carson, Caruth &amp; Verma. PMBB Geno-Pheno Toolkit: A suite of scalable,
+          reproducible pipelines for cross-biobank association analyses. <em>Bioinformatics</em> (under review).
+          &middot; Verma, <u>Rodriguez</u>, Guare, Cardone &amp; Carson (2024).
+          <a href="http://psb.stanford.edu/psb-online/proceedings/psb25/wkshop_commandline.pdf" target="_blank" rel="noopener">Command line to pipeLine: Cross-biobank analyses with Nextflow</a>.
+          <em>PSB 2025 Proceedings</em>, 696–701.
+        </p>
+        <div class="card__stack">
+          <span class="chip chip--sm">Nextflow</span>
+          <span class="chip chip--sm">GWAS</span>
+          <span class="chip chip--sm">ExWAS</span>
+          <span class="chip chip--sm">PheWAS</span>
+          <span class="chip chip--sm">AWS/GCP</span>
+        </div>
+        <div class="card__stack">
+          <a class="chip chip--sm" href="https://github.com/PMBB-Informatics-and-Genomics/psb2025-workshop" target="_blank" rel="noopener">PSB 2025 Workshop →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="card__tag">Clinical Informatics</span>
+        <h3 class="card__title">Biobank Rare Variant (BRaVa) Consortium</h3>
+        <p class="card__blurb">
+          Contributed PMBB data and analysis to a global, gene-based meta-analysis of rare coding variation across
+          10 biobanks (1.2M+ individuals, diverse ancestries), 33 clinical endpoints, and 11 quantitative traits —
+          identifying 514 gene-trait associations, including 31 novel.
+        </p>
+        <p class="card__cite">
+          Palmer, Hill, Hodgson, et al., <u>Rodriguez</u>, et al., Verma, Zhou, Karczewski, Lindgren &amp; Neale, for
+          BRaVa (2026). <em>medRxiv</em>.
+        </p>
+        <div class="card__stack">
+          <span class="chip chip--sm">ExWAS</span>
+          <span class="chip chip--sm">Rare Variant</span>
+          <span class="chip chip--sm">Multi-ancestry</span>
+          <span class="chip chip--sm">Consortium</span>
+        </div>
+        <div class="card__stack">
+          <a class="chip chip--sm" href="https://www.medrxiv.org/content/10.64898/2026.05.21.26353759v1" target="_blank" rel="noopener">Preprint →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="card__tag">Clinical Informatics</span>
+        <h3 class="card__title">Allostatic Load &amp; Health Outcomes</h3>
+        <p class="card__blurb">
+          Examining the impact of physiological burden on health outcomes using biobank-linked electronic health
+          records, quantifying allostatic load as a composite marker of chronic stress exposure.
+        </p>
+        <p class="card__cite">
+          <u>Rodriguez</u>, Okeh, Drivas &amp; Setia-Verma (2024). Bearing the Load. <em>Department of Medicine
+          Research Day</em>, University of Pennsylvania.
+        </p>
+        <div class="card__stack">
+          <span class="chip chip--sm">EHR</span>
+          <span class="chip chip--sm">Biobank</span>
+          <span class="chip chip--sm">Clinical</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="card__tag">Machine Learning &amp; LLM</span>
+        <h3 class="card__title">Undiagnosed Patient Project</h3>
+        <p class="card__blurb">
+          Using agentic AI to identify undiagnosed patients within PMBB by scanning structured EHR data and
+          unstructured clinician note summaries for diagnostic signal missed by conventional phenotyping.
+        </p>
+        <div class="card__stack">
+          <span class="chip chip--sm">LLM</span>
+          <span class="chip chip--sm">Agentic AI</span>
+          <span class="chip chip--sm">EHR</span>
+          <span class="chip chip--sm">NLP</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="card__tag">Machine Learning &amp; LLM</span>
+        <h3 class="card__title">LLM-Based Psychometric Evaluation</h3>
+        <p class="card__blurb">
+          Built NLP/ML pipelines to extract discussion topics and psychometric signal from ambulatory patient speech
+          in schizophrenia and serious mental illness, informing frameworks for evaluating language-based clinical
+          assessments and psychomotor slowing.
+        </p>
+        <p class="card__cite">
+          Cohen, <u>Rodriguez</u>, et al. (2022).
+          <a href="https://doi.org/10.1093/schbul/sbac051" target="_blank" rel="noopener">Natural language processing and psychosis</a>.
+          <em>Schizophrenia Bulletin</em>. &middot; Cowan, <u>Rodriguez</u>, et al. (2022).
+          <a href="https://doi.org/10.3390/bs12080286" target="_blank" rel="noopener">Talking about health</a>.
+          <em>Behavioral Sciences</em>. &middot; Foltz, Chandler, Diaz-Asper, Cohen, <u>Rodriguez</u>, et al. (2022).
+          <a href="https://doi.org/10.1016/j.schres.2022.07.011" target="_blank" rel="noopener">Reflections on the nature of measurement</a>.
+          <em>Schizophrenia Research</em>. &middot; Cohen, <u>Rodriguez</u>, et al. (2024).
+          <a href="https://doi.org/10.1016/j.psychres.2024.116104" target="_blank" rel="noopener">Evaluating speech latencies</a>.
+          <em>Psychiatry Research</em>.
+        </p>
+        <div class="card__stack">
+          <span class="chip chip--sm">NLP</span>
+          <span class="chip chip--sm">ML</span>
+          <span class="chip chip--sm">Clinical</span>
+          <span class="chip chip--sm">Schizophrenia</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="card__tag">Machine Learning &amp; LLM</span>
+        <h3 class="card__title">Multimodal &amp; Facial Affect Analysis</h3>
+        <p class="card__blurb">
+          Developed computer-vision pipelines to objectively quantify blunted facial affect and paranoia-related
+          digital phenotypes from video in serious mental illness research.
+        </p>
+        <p class="card__cite">
+          Cowan, <u>Rodriguez</u>, Strauss, Raugh &amp; Cohen (2024).
+          <a href="https://doi.org/10.1007/s00406-023-01696-6" target="_blank" rel="noopener">Computerized analysis of facial expression</a>.
+          <em>Eur Arch Psychiatry Clin Neurosci</em>. &middot; Cohen, <u>Rodriguez</u> &amp; Warren (2022). Developing
+          a Multimodal Digital Phenotyping Paranoia Measure. <em>ISCTM</em>.
+        </p>
+        <div class="card__stack">
+          <span class="chip chip--sm">Computer Vision</span>
+          <span class="chip chip--sm">Multimodal</span>
+          <span class="chip chip--sm">Digital Phenotyping</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="card__tag">Evolution &amp; Comparative Genomics</span>
+        <h3 class="card__title">Evolution of Green Blood in Lizards</h3>
+        <p class="card__blurb">
+          PhD dissertation research uncovering multiple independent origins of green (biliverdin-based) blood in
+          New Guinea lizards through phylogenomics and comparative genomics. Coverage by NPR, The Atlantic, AP, and
+          Science News.
+        </p>
+        <p class="card__cite">
+          <u>Rodriguez</u>, Perkins &amp; Austin (2018).
+          <a href="https://www.science.org/doi/10.1126/sciadv.aao5017" target="_blank" rel="noopener">Multiple origins of green blood in New Guinea lizards</a>.
+          <em>Science Advances</em>, 4(5), eaao5017. &middot; <u>Rodriguez</u> (2020).
+          <a href="https://repository.lsu.edu/gradschool_dissertations/5420/" target="_blank" rel="noopener">Evolution of Green Blood in New Guinea Lizards</a>
+          [Doctoral Dissertation], LSU.
+        </p>
+        <div class="card__stack">
+          <span class="chip chip--sm">Phylogenomics</span>
+          <span class="chip chip--sm">Comparative Genomics</span>
+          <span class="chip chip--sm">NGS</span>
+        </div>
+        <div class="card__stack">
+          <a class="chip chip--sm" href="https://www.science.org/doi/10.1126/sciadv.aao5017" target="_blank" rel="noopener">Science Advances →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="card__tag">Evolution &amp; Comparative Genomics</span>
+        <h3 class="card__title">Evolution of the Albumin Protein Family in Reptiles</h3>
+        <p class="card__blurb">
+          Co-authored analysis of albumin gene family evolution across reptiles, tracing duplication and
+          diversification patterns tied to physiological adaptation.
+        </p>
+        <p class="card__cite">
+          Broussard, <u>Rodriguez</u> &amp; Austin (2022).
+          <a href="https://doi.org/10.1016/j.ympev.2022.107435" target="_blank" rel="noopener">Evolution of the albumin protein family in reptiles</a>.
+          <em>Molecular Phylogenetics and Evolution</em>, 169, 107435.
+        </p>
+        <div class="card__stack">
+          <span class="chip chip--sm">Comparative Genomics</span>
+          <span class="chip chip--sm">Evolutionary Biology</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section skills" id="skills" data-accent="skills">
+    <div class="section__head">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Skills</h2>
+      <span class="section__rule"></span>
+    </div>
+
+    <div class="grid-skills">
+      <div class="box skill-group">
+        <h3 class="skill-group__name">Programming &amp; Infrastructure</h3>
+        <div class="skill-group__tags">
+          <span class="chip">Python</span>
+          <span class="chip">R</span>
+          <span class="chip">Bash/Shell</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Nextflow</span>
+          <span class="chip">Snakemake</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Singularity</span>
+          <span class="chip">Git</span>
+          <span class="chip">SLURM/PBS</span>
+        </div>
+      </div>
+
+      <div class="box skill-group">
+        <h3 class="skill-group__name">Cloud &amp; DevOps</h3>
+        <div class="skill-group__tags">
+          <span class="chip">AWS</span>
+          <span class="chip">Azure</span>
+          <span class="chip">Google Cloud</span>
+          <span class="chip">Databricks</span>
+          <span class="chip">CI/CD</span>
+          <span class="chip">HPC</span>
+        </div>
+      </div>
+
+      <div class="box skill-group">
+        <h3 class="skill-group__name">Clinical Informatics &amp; Genomics</h3>
+        <div class="skill-group__tags">
+          <span class="chip">GWAS</span>
+          <span class="chip">ExWAS</span>
+          <span class="chip">PheWAS</span>
+          <span class="chip">GSEA</span>
+          <span class="chip">TWAS</span>
+          <span class="chip">PLINK</span>
+          <span class="chip">SAIGE</span>
+          <span class="chip">VEP</span>
+          <span class="chip">EHR / HIPAA</span>
+          <span class="chip">IRB Compliance</span>
+        </div>
+      </div>
+
+      <div class="box skill-group">
+        <h3 class="skill-group__name">Statistics &amp; Machine Learning</h3>
+        <div class="skill-group__tags">
+          <span class="chip">Predictive Modeling</span>
+          <span class="chip">Bayesian Methods</span>
+          <span class="chip">PCA / Clustering</span>
+          <span class="chip">NLP</span>
+          <span class="chip">LLMs</span>
+          <span class="chip">Network Analysis</span>
+        </div>
+      </div>
+
+      <div class="box skill-group">
+        <h3 class="skill-group__name">Soft Skills</h3>
+        <div class="skill-group__tags">
+          <span class="chip">Mentorship</span>
+          <span class="chip">Scientific Writing</span>
+          <span class="chip">Science Communication</span>
+          <span class="chip">DEI Advocacy</span>
+          <span class="chip">Project Management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="section experience" id="experience" data-accent="experience">
+    <div class="section__head">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Experience</h2>
+      <span class="section__rule"></span>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <span class="timeline__dot"></span>
+        <div class="box entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Senior Bioinformatician</h3>
+            <span class="entry__dates">2023 – present</span>
+          </div>
+          <div class="entry__org">Penn Medicine Biobank (PMBB) · Philadelphia, PA</div>
+          <ul class="entry__blurb">
+            <li>Curate, process, and analyze the annual PMBB release (300K+ participants), integrating phenotype,
+              exome, genotype, imputed, and clinical EHR data across release cycles</li>
+            <li>Project manager for 5+ genomic research teams; oversee bioinformatics workflows and statistical
+              rigor across the Setia-Verma, Verma, and Drivas labs</li>
+            <li>Directed development of scalable Nextflow pipelines (GWAS, ExWAS, PheWAS) for 500K+ sample datasets
+              across local HPC and cloud platforms</li>
+            <li>Manages genomic data requests, cohort queries, and variant-level extractions for researchers without
+              direct database access</li>
+          </ul>
+          <div class="card__stack" style="margin-top:12px">
+            <span class="chip chip--sm">Nextflow</span>
+            <span class="chip chip--sm">GWAS</span>
+            <span class="chip chip--sm">Biobank</span>
+            <span class="chip chip--sm">HPC/Cloud</span>
+            <span class="chip chip--sm">Leadership</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <span class="timeline__dot"></span>
+        <div class="box entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Postdoctoral Researcher, Computational Mental Health</h3>
+            <span class="entry__dates">2020 – 2023</span>
+          </div>
+          <div class="entry__org">Center for Computation &amp; Technology, Louisiana State University · Baton Rouge, LA</div>
+          <ul class="entry__blurb">
+            <li>Developed ML and NLP analytical pipelines to predict mental health symptoms from archival clinical
+              data</li>
+            <li>Supervised the technical side of 5 research projects (statistical frameworks, NLP, ML models),
+              resulting in peer-reviewed publications</li>
+            <li>Ensured HIPAA- and IRB-compliant data integration across diverse sources; developed EHR data
+              management plans</li>
+            <li>Collaborated internationally with academic and industry researchers</li>
+          </ul>
+          <div class="card__stack" style="margin-top:12px">
+            <span class="chip chip--sm">NLP</span>
+            <span class="chip chip--sm">ML</span>
+            <span class="chip chip--sm">Mental Health</span>
+            <span class="chip chip--sm">HIPAA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <span class="timeline__dot"></span>
+        <div class="box entry">
+          <div class="entry__head">
+            <h3 class="entry__title">NSF Graduate Research Fellow</h3>
+            <span class="entry__dates">2014 – 2020</span>
+          </div>
+          <div class="entry__org">Museum of Natural Science, Louisiana State University · Baton Rouge, LA</div>
+          <ul class="entry__blurb">
+            <li>Led 3 independent research projects on reptile genomics (green blood, adhesive toe pads, live
+              birth), from study design to publication</li>
+            <li>Secured $180,000+ in external funding (NSF GRFP, LA-BRIDGE, institutional grants)</li>
+            <li>Ran HPC jobs (280,000 CPU-hours) analyzing next-generation sequencing data for phylogenomic and
+              comparative-genomic analyses</li>
+            <li>Disseminated results via Science Advances, NPR, The Atlantic, AP, and more</li>
+          </ul>
+          <div class="card__stack" style="margin-top:12px">
+            <span class="chip chip--sm">Phylogenomics</span>
+            <span class="chip chip--sm">NGS</span>
+            <span class="chip chip--sm">HPC</span>
+            <span class="chip chip--sm">Fieldwork</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section class="section education" id="education" data-accent="education">
+    <div class="section__head">
+      <span class="section__num">05</span>
+      <h2 class="section__title">Education</h2>
+      <span class="section__rule"></span>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <span class="timeline__dot"></span>
+        <div class="box entry">
+          <div class="entry__head">
+            <h3 class="entry__title">PhD, Ecology, Evolution, &amp; Genetics</h3>
+            <span class="entry__dates">2020</span>
+          </div>
+          <div class="entry__org">
+            <img src="assets/img/lsu-mns.png" alt="LSU Museum of Natural Science logo" style="height:22px;vertical-align:middle;margin-right:8px;border-radius:4px;">
+            Museum of Natural Science, Louisiana State University · Baton Rouge, LA
+          </div>
+          <p class="entry__blurb">
+            Dissertation: <em>Evolution of Green Blood in New Guinea Lizards: Phylogenomics, Biogeography, and
+            Comparative Genomics.</em> Advisor: Dr. Christopher Austin.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <span class="timeline__dot"></span>
+        <div class="box entry">
+          <div class="entry__head">
+            <h3 class="entry__title">BS, Biological Sciences</h3>
+            <span class="entry__dates">2013</span>
+          </div>
+          <div class="entry__org">
+            <img src="assets/img/clarkson-logo.png" alt="Clarkson University logo" style="height:22px;vertical-align:middle;margin-right:8px;border-radius:4px;">
+            Clarkson University · Potsdam, NY
+          </div>
+          <p class="entry__blurb">Advisor: Dr. Kenneth Wallace, Department of Biological Sciences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTERESTS ================= -->
+  <section class="section section--last interests" id="interests" data-accent="interests">
+    <div class="section__head">
+      <span class="section__num">06</span>
+      <h2 class="section__title">Interests</h2>
+      <span class="section__rule"></span>
+    </div>
+
+    <div class="grid-interests">
+
+      <div class="box box--accent interest">
+        <div class="interest__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M7 2v8a2 2 0 0 0 2 2v10M7 2v20M11 2v8M15 2c-1.5 3-1.5 7 0 10v10"/></svg>
+        </div>
+        <h3>Food</h3>
+        <p>Chasing new restaurants and cooking up dishes worth photographing.</p>
+        <p><a href="https://www.instagram.com/boricuabites/" target="_blank" rel="noopener">@boricuabites →</a></p>
+      </div>
+
+      <div class="box box--accent interest">
+        <div class="interest__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 22V10M12 10C7 10 4 6 4 2c5 0 8 3 8 8Zm0 0c0-5 3-8 8-8 0 4-3 8-8 8Z"/></svg>
+        </div>
+        <h3>Plants</h3>
+        <p>Documenting an ever-growing plant collection, one propagation at a time.</p>
+        <p><a href="https://www.instagram.com/papacitoplantito/" target="_blank" rel="noopener">@papacitoplantito →</a></p>
+      </div>
+
+      <div class="box box--accent interest">
+        <div class="interest__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M2 18c2-6 4-9 6-9s3 5 6 5 4-8 8-8M2 18h20"/></svg>
+        </div>
+        <h3>Roller Coasters</h3>
+        <p>
+          Organizes the <a href="https://screamqueens.org/" target="_blank" rel="noopener">Scream Queens Coaster
+          Community</a>, an LGBTQIA+ nonprofit built around the motto "no one rides alone."
+        </p>
+      </div>
+
+      <div class="box box--accent interest">
+        <div class="interest__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 10v4h4l6 5V5L7 10Zm14-3a6 6 0 0 1 0 10"/></svg>
+        </div>
+        <h3>Science Communication</h3>
+        <p>Sharing genomics and natural history with a broader audience.</p>
+        <p><a href="https://www.instagram.com/frogriguez/" target="_blank" rel="noopener">@frogriguez →</a></p>
+      </div>
+
+      <div class="box box--accent interest">
+        <div class="interest__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M17 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2M9 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm12 10v-2a4 4 0 0 0-3-3.87M15 2.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Outreach &amp; Press</h3>
+        <p>Museum tours, K–12 STEM days, and public talks at LSU's Museum of Natural Science.</p>
+        <p>
+          <a href="https://www.npr.org/sections/health-shots/2018/05/16/611115055/why-do-some-lizards-have-green-blood" target="_blank" rel="noopener">NPR →</a>
+          &nbsp;·&nbsp;
+          <a href="https://www.sciencenews.org/article/green-blood-lizards-probably-evolved-four-times" target="_blank" rel="noopener">Science News →</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="footer__copy">&copy; 2026 Zachary Rodriguez, PhD</span>
+  <div class="footer__links">
+    <a href="https://github.com/frogriguez" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=R0HlvQIAAAAJ" target="_blank" rel="noopener">Scholar</a>
+    <a href="https://linkedin.com/in/zbrodriguez/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
